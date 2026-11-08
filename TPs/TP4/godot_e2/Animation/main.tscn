@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c6boakedgmb3h"]
+
+[ext_resource type="Script" uid="uid://bg2m6n6qna1x2" path="res://Animation/controller.gd" id="1_hn04j"]
+[ext_resource type="PackedScene" uid="uid://c73s8b28v2imp" path="res://textures/laptop.glb" id="1_ib2ey"]
+
+[node name="Main" type="Node3D" unique_id=1899504026]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1889784745]
+transform = Transform3D(0.9280515, -0.17603362, 0.32822636, 0.033046108, 0.9167006, 0.39820585, -0.370983, -0.35870898, 0.8565627, 1.5889952, 2.2284732, 3.3630967)
+
+[node name="Controller" type="Node3D" parent="." unique_id=1436611067]
+script = ExtResource("1_hn04j")
+
+[node name="laptop" parent="Controller" unique_id=971549836 instance=ExtResource("1_ib2ey")]

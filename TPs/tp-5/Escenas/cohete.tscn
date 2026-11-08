@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://dsiftu76l1w00"]
+
+[ext_resource type="Texture2D" path="res://Sprites/ships/4x/heron-sand.png" id="1_idle"]
+[ext_resource type="Texture2D" path="res://Sprites/ships/4x/heron-sand-thrust-4f.png" id="2_thrust"]
+[ext_resource type="Texture2D" path="res://Sprites/explosions/4x/explosion-48-8f.png" id="3_explosion"]
+[ext_resource type="Script" path="res://Escenas/cohete.gd" id="4_script"]
+
+[sub_resource type="AtlasTexture" id="Atlas_0"]
+atlas = ExtResource("2_thrust")
+region = Rect2(0, 0, 128, 152)
+
+[sub_resource type="AtlasTexture" id="Atlas_1"]
+atlas = ExtResource("2_thrust")
+region = Rect2(128, 0, 128, 152)
+
+[sub_resource type="AtlasTexture" id="Atlas_2"]
+atlas = ExtResource("2_thrust")
+region = Rect2(256, 0, 128, 152)
+
+[sub_resource type="AtlasTexture" id="Atlas_3"]
+atlas = ExtResource("2_thrust")
+region = Rect2(384, 0, 128, 152)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cohete"]
+animations = [{
+"frames": [{"duration": 1.0, "texture": ExtResource("1_idle")}],
+"loop": true,
+"name": &"reposo",
+"speed": 5.0
+}, {
+"frames": [{"duration": 1.0, "texture": SubResource("Atlas_0")}, {"duration": 1.0, "texture": SubResource("Atlas_1")}, {"duration": 1.0, "texture": SubResource("Atlas_2")}, {"duration": 1.0, "texture": SubResource("Atlas_3")}],
+"loop": true,
+"name": &"propulsion",
+"speed": 12.0
+}]
+
+[sub_resource type="AtlasTexture" id="Explosion_0"]
+atlas = ExtResource("3_explosion")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="Explosion_1"]
+atlas = ExtResource("3_explosion")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="Explosion_2"]
+atlas = ExtResource("3_explosion")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="Explosion_3"]
+atlas = ExtResource("3_explosion")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="Explosion_4"]
+atlas = ExtResource("3_explosion")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="Explosion_5"]
+atlas = ExtResource("3_explosion")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="Explosion_6"]
+atlas = ExtResource("3_explosion")
+region = Rect2(1152, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="Explosion_7"]
+atlas = ExtResource("3_explosion")
+region = Rect2(1344, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="Frames_explosion"]
+animations = [{
+"frames": [{"duration": 1.0, "texture": SubResource("Explosion_0")}, {"duration": 1.0, "texture": SubResource("Explosion_1")}, {"duration": 1.0, "texture": SubResource("Explosion_2")}, {"duration": 1.0, "texture": SubResource("Explosion_3")}, {"duration": 1.0, "texture": SubResource("Explosion_4")}, {"duration": 1.0, "texture": SubResource("Explosion_5")}, {"duration": 1.0, "texture": SubResource("Explosion_6")}, {"duration": 1.0, "texture": SubResource("Explosion_7")}],
+"loop": false,
+"name": &"explosion",
+"speed": 16.0
+}]
+
+[node name="Cohete" type="RigidBody2D" unique_id=1836974900]
+texture_filter = 1
+collision_layer = 2
+collision_mask = 1
+custom_integrator = true
+can_sleep = false
+contact_monitor = true
+max_contacts_reported = 16
+continuous_cd = 2
+script = ExtResource("4_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-32, -30)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_cohete")
+animation = &"reposo"
+centered = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, -28, 10, -16, 14, 0, 30, 6, 30, 18, 12, 18, 12, 28, -12, 28, -12, 18, -30, 18, -30, 6, -14, 0, -10, -16)
+
+[node name="PataIzquierda" type="Marker2D" parent="."]
+position = Vector2(-12, 28)
+
+[node name="PataDerecha" type="Marker2D" parent="."]
+position = Vector2(12, 28)
+
+[node name="Explosion" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("Frames_explosion")
+animation = &"explosion"

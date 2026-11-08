@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://dxdabble66rxh"
+path="res://.godot/imported/CozySpacePixelMono-Regular.fnt-f071b7bc28b0ca7b2ba892ee73e5f18d.fontdata"
+
+[deps]
+
+source_file="res://Font/bmfont/CozySpacePixelMono-Regular.fnt"
+dest_files=["res://.godot/imported/CozySpacePixelMono-Regular.fnt-f071b7bc28b0ca7b2ba892ee73e5f18d.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

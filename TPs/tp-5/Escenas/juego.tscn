@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://cc2gfldh8xcy1"]
+
+[ext_resource type="PackedScene" uid="uid://dsiftu76l1w00" path="res://Escenas/cohete.tscn" id="1_cohete"]
+[ext_resource type="PackedScene" path="res://Escenas/hud.tscn" id="2_hud"]
+[ext_resource type="Script" uid="uid://bggahss7ry7ka" path="res://Escenas/juego.gd" id="3_script"]
+[ext_resource type="Texture2D" uid="uid://ck6e0yqn65twn" path="res://Background/moon/1 background/1.png" id="4_estrellas"]
+[ext_resource type="SpriteFrames" path="res://Escenas/planeta_fondo.tres" id="5_planeta"]
+[ext_resource type="Texture2D" uid="uid://c1b6srf7v7b0a" path="res://Background/montains/montain1.png" id="6_montanas"]
+[ext_resource type="Script" path="res://Escenas/background.gd" id="7_background"]
+[ext_resource type="PackedScene" path="res://Escenas/resultado.tscn" id="8_resultado"]
+
+[node name="Juego" type="Node2D" unique_id=656480252]
+script = ExtResource("3_script")
+
+[node name="Background" type="CanvasLayer" parent="." unique_id=616324386]
+layer = -1
+script = ExtResource("7_background")
+
+[node name="Fondo" type="TextureRect" parent="Background" unique_id=1443163917]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_estrellas")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Planeta" type="AnimatedSprite2D" parent="Background" unique_id=787847616]
+texture_filter = 1
+position = Vector2(1044, 108)
+scale = Vector2(1.3125, 1.3125)
+sprite_frames = ExtResource("5_planeta")
+animation = &"rotacion"
+autoplay = "rotacion"
+
+[node name="Montanas" type="TextureRect" parent="Background" unique_id=1547053236]
+texture_filter = 1
+offset_top = 448.7625
+offset_right = 1920.0
+offset_bottom = 772.7625
+scale = Vector2(0.6, 0.6)
+mouse_filter = 2
+texture = ExtResource("6_montanas")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Terreno" type="Node2D" parent="." unique_id=1900310444]
+position = Vector2(0, 630.05)
+
+[node name="MontanaIzquierda" type="StaticBody2D" parent="Terreno"]
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Terreno/MontanaIzquierda"]
+color = Color(0.18, 0.2, 0.27, 1)
+polygon = PackedVector2Array(0, 192.5, 80, 215, 90, 165, 100, 219, 210, 220, 230, 159.25, 246, 220, 350, 215, 365, 160, 380, 219, 436, 189, 436, 302.4, 0, 302.4)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terreno/MontanaIzquierda"]
+polygon = PackedVector2Array(0, 192.5, 80, 215, 90, 165, 100, 219, 210, 220, 230, 159.25, 246, 220, 350, 215, 365, 160, 380, 219, 436, 189, 436, 302.4, 0, 302.4)
+
+[node name="MontanaCentral" type="StaticBody2D" parent="Terreno"]
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Terreno/MontanaCentral"]
+color = Color(0.18, 0.2, 0.27, 1)
+polygon = PackedVector2Array(524, 189, 630, 220, 758, 218, 770, 154, 782, 218, 850, 178.5, 850, 302.4, 524, 302.4)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terreno/MontanaCentral"]
+polygon = PackedVector2Array(524, 189, 630, 220, 758, 218, 770, 154, 782, 218, 850, 178.5, 850, 302.4, 524, 302.4)
+
+[node name="MontanaDerecha" type="StaticBody2D" parent="Terreno"]
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Terreno/MontanaDerecha"]
+color = Color(0.18, 0.2, 0.27, 1)
+polygon = PackedVector2Array(930, 178.5, 975, 218, 985, 158, 995, 220, 1060, 222, 1070, 160, 1080, 224, 1150, 220, 1160, 156, 1170, 222, 1240, 225, 1250, 160, 1260, 220, 1344, 227.5, 1344, 302.4, 930, 302.4)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terreno/MontanaDerecha"]
+polygon = PackedVector2Array(930, 178.5, 975, 218, 985, 158, 995, 220, 1060, 222, 1070, 160, 1080, 224, 1150, 220, 1160, 156, 1170, 222, 1240, 225, 1250, 160, 1260, 220, 1344, 227.5, 1344, 302.4, 930, 302.4)
+
+[node name="MontanaExtremoDerecho" type="StaticBody2D" parent="Terreno"]
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Terreno/MontanaExtremoDerecho"]
+color = Color(0.18, 0.2, 0.27, 1)
+polygon = PackedVector2Array(1416, 227.5, 1460, 220, 1470, 162, 1480, 223, 1520, 220, 1530, 160, 1536, 210, 1536, 302.4, 1416, 302.4)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terreno/MontanaExtremoDerecho"]
+polygon = PackedVector2Array(1416, 227.5, 1460, 220, 1470, 162, 1480, 223, 1520, 220, 1530, 160, 1536, 210, 1536, 302.4, 1416, 302.4)
+
+[node name="Plataforma1" type="StaticBody2D" parent="Terreno" groups=["plataformas"]]
+position = Vector2(480, 245.7)
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Terreno/Plataforma1"]
+color = Color(0.18, 0.2, 0.27, 1)
+polygon = PackedVector2Array(-44, -56.7, 44, -56.7, 44, 56.7, -44, 56.7)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terreno/Plataforma1"]
+polygon = PackedVector2Array(-44, -56.7, 44, -56.7, 44, 56.7, -44, 56.7)
+
+[node name="Superficie" type="Line2D" parent="Terreno/Plataforma1"]
+points = PackedVector2Array(-44, -56.7, 44, -56.7)
+width = 3.0
+default_color = Color(0, 0.9, 1, 1)
+
+[node name="Plataforma2" type="StaticBody2D" parent="Terreno" groups=["plataformas"]]
+position = Vector2(890, 240.45)
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Terreno/Plataforma2"]
+color = Color(0.18, 0.2, 0.27, 1)
+polygon = PackedVector2Array(-40, -61.95, 40, -61.95, 40, 61.95, -40, 61.95)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terreno/Plataforma2"]
+polygon = PackedVector2Array(-40, -61.95, 40, -61.95, 40, 61.95, -40, 61.95)
+
+[node name="Superficie" type="Line2D" parent="Terreno/Plataforma2"]
+points = PackedVector2Array(-40, -61.95, 40, -61.95)
+width = 3.0
+default_color = Color(0, 0.9, 1, 1)
+
+[node name="Plataforma4" type="StaticBody2D" parent="Terreno" groups=["plataformas"]]
+position = Vector2(1380, 264.95)
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Terreno/Plataforma4"]
+color = Color(0.18, 0.2, 0.27, 1)
+polygon = PackedVector2Array(-36, -37.45, 36, -37.45, 36, 37.45, -36, 37.45)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Terreno/Plataforma4"]
+polygon = PackedVector2Array(-36, -37.45, 36, -37.45, 36, 37.45, -36, 37.45)
+
+[node name="Superficie" type="Line2D" parent="Terreno/Plataforma4"]
+points = PackedVector2Array(-36, -37.45, 36, -37.45)
+width = 3.0
+default_color = Color(0, 0.9, 1, 1)
+
+
+[node name="Cohete" parent="." unique_id=1955984426 instance=ExtResource("1_cohete")]
+position = Vector2(350, 140)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1847780007]
+position = Vector2(768, 432)
+zoom = Vector2(0.75, 0.75)
+
+[node name="GUI" parent="." unique_id=1583103644 instance=ExtResource("2_hud")]
+
+[node name="Resultado" parent="." instance=ExtResource("8_resultado")]
+
+
+

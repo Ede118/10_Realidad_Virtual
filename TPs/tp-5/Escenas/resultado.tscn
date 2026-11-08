@@ -1,0 +1,68 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://Escenas/resultado.gd" id="1_script"]
+[ext_resource type="FontFile" path="res://Font/woff/CozySpacePixel-Bold.woff" id="2_font"]
+
+[sub_resource type="Theme" id="Theme_resultado"]
+default_font = ExtResource("2_font")
+default_font_size = 22
+
+[node name="Resultado" type="CanvasLayer"]
+layer = 2
+visible = false
+script = ExtResource("1_script")
+
+[node name="Pantalla" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_resultado")
+color = Color(0.035, 0.045, 0.08, 1)
+
+[node name="Centro" type="CenterContainer" parent="Pantalla"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Contenido" type="VBoxContainer" parent="Pantalla/Centro"]
+custom_minimum_size = Vector2(560, 0)
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Titulo" type="Label" parent="Pantalla/Centro/Contenido"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+
+[node name="Puntuacion" type="Label" parent="Pantalla/Centro/Contenido"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+
+[node name="Detalle" type="Label" parent="Pantalla/Centro/Contenido"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+
+[node name="Instruccion" type="Label" parent="Pantalla/Centro/Contenido"]
+layout_mode = 2
+text = "Presioná R para repetir el nivel\no elegí una opción:"
+horizontal_alignment = 1
+
+[node name="Repetir" type="Button" parent="Pantalla/Centro/Contenido"]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+text = "Repetir nivel"
+
+[node name="Menu" type="Button" parent="Pantalla/Centro/Contenido"]
+custom_minimum_size = Vector2(0, 52)
+layout_mode = 2
+text = "Volver al menú principal"
+
+[connection signal="pressed" from="Pantalla/Centro/Contenido/Repetir" to="." method="_on_repetir_pressed"]
+[connection signal="pressed" from="Pantalla/Centro/Contenido/Menu" to="." method="_on_menu_pressed"]

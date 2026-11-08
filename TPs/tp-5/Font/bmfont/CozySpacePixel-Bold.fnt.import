@@ -1,0 +1,17 @@
+[remap]
+
+importer="font_data_bmfont"
+type="FontFile"
+uid="uid://b4pqlrv1sokyl"
+path="res://.godot/imported/CozySpacePixel-Bold.fnt-d3290e17eb81f3bdd257345f97a76473.fontdata"
+
+[deps]
+
+source_file="res://Font/bmfont/CozySpacePixel-Bold.fnt"
+dest_files=["res://.godot/imported/CozySpacePixel-Bold.fnt-d3290e17eb81f3bdd257345f97a76473.fontdata"]
+
+[params]
+
+fallbacks=[]
+compress=true
+scaling_mode=2

@@ -1,0 +1,431 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dqnrejl6yqes"]
+
+[ext_resource type="Texture2D" uid="uid://bunayu1bb7ayd" path="res://Background/pixel_planets/128px/terran_verdant.png" id="1_planeta"]
+
+[sub_resource type="AtlasTexture" id="Cuadro_0"]
+atlas = ExtResource("1_planeta")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_1"]
+atlas = ExtResource("1_planeta")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_2"]
+atlas = ExtResource("1_planeta")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_3"]
+atlas = ExtResource("1_planeta")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_4"]
+atlas = ExtResource("1_planeta")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_5"]
+atlas = ExtResource("1_planeta")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_6"]
+atlas = ExtResource("1_planeta")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_7"]
+atlas = ExtResource("1_planeta")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_8"]
+atlas = ExtResource("1_planeta")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_9"]
+atlas = ExtResource("1_planeta")
+region = Rect2(1152, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_10"]
+atlas = ExtResource("1_planeta")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_11"]
+atlas = ExtResource("1_planeta")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_12"]
+atlas = ExtResource("1_planeta")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_13"]
+atlas = ExtResource("1_planeta")
+region = Rect2(384, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_14"]
+atlas = ExtResource("1_planeta")
+region = Rect2(512, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_15"]
+atlas = ExtResource("1_planeta")
+region = Rect2(640, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_16"]
+atlas = ExtResource("1_planeta")
+region = Rect2(768, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_17"]
+atlas = ExtResource("1_planeta")
+region = Rect2(896, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_18"]
+atlas = ExtResource("1_planeta")
+region = Rect2(1024, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_19"]
+atlas = ExtResource("1_planeta")
+region = Rect2(1152, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_20"]
+atlas = ExtResource("1_planeta")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_21"]
+atlas = ExtResource("1_planeta")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_22"]
+atlas = ExtResource("1_planeta")
+region = Rect2(256, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_23"]
+atlas = ExtResource("1_planeta")
+region = Rect2(384, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_24"]
+atlas = ExtResource("1_planeta")
+region = Rect2(512, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_25"]
+atlas = ExtResource("1_planeta")
+region = Rect2(640, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_26"]
+atlas = ExtResource("1_planeta")
+region = Rect2(768, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_27"]
+atlas = ExtResource("1_planeta")
+region = Rect2(896, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_28"]
+atlas = ExtResource("1_planeta")
+region = Rect2(1024, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_29"]
+atlas = ExtResource("1_planeta")
+region = Rect2(1152, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_30"]
+atlas = ExtResource("1_planeta")
+region = Rect2(0, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_31"]
+atlas = ExtResource("1_planeta")
+region = Rect2(128, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_32"]
+atlas = ExtResource("1_planeta")
+region = Rect2(256, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_33"]
+atlas = ExtResource("1_planeta")
+region = Rect2(384, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_34"]
+atlas = ExtResource("1_planeta")
+region = Rect2(512, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_35"]
+atlas = ExtResource("1_planeta")
+region = Rect2(640, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_36"]
+atlas = ExtResource("1_planeta")
+region = Rect2(768, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_37"]
+atlas = ExtResource("1_planeta")
+region = Rect2(896, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_38"]
+atlas = ExtResource("1_planeta")
+region = Rect2(1024, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_39"]
+atlas = ExtResource("1_planeta")
+region = Rect2(1152, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_40"]
+atlas = ExtResource("1_planeta")
+region = Rect2(0, 512, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_41"]
+atlas = ExtResource("1_planeta")
+region = Rect2(128, 512, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_42"]
+atlas = ExtResource("1_planeta")
+region = Rect2(256, 512, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_43"]
+atlas = ExtResource("1_planeta")
+region = Rect2(384, 512, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_44"]
+atlas = ExtResource("1_planeta")
+region = Rect2(512, 512, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_45"]
+atlas = ExtResource("1_planeta")
+region = Rect2(640, 512, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_46"]
+atlas = ExtResource("1_planeta")
+region = Rect2(768, 512, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_47"]
+atlas = ExtResource("1_planeta")
+region = Rect2(896, 512, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_48"]
+atlas = ExtResource("1_planeta")
+region = Rect2(1024, 512, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_49"]
+atlas = ExtResource("1_planeta")
+region = Rect2(1152, 512, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_50"]
+atlas = ExtResource("1_planeta")
+region = Rect2(0, 640, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_51"]
+atlas = ExtResource("1_planeta")
+region = Rect2(128, 640, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_52"]
+atlas = ExtResource("1_planeta")
+region = Rect2(256, 640, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_53"]
+atlas = ExtResource("1_planeta")
+region = Rect2(384, 640, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_54"]
+atlas = ExtResource("1_planeta")
+region = Rect2(512, 640, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_55"]
+atlas = ExtResource("1_planeta")
+region = Rect2(640, 640, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_56"]
+atlas = ExtResource("1_planeta")
+region = Rect2(768, 640, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_57"]
+atlas = ExtResource("1_planeta")
+region = Rect2(896, 640, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_58"]
+atlas = ExtResource("1_planeta")
+region = Rect2(1024, 640, 128, 128)
+
+[sub_resource type="AtlasTexture" id="Cuadro_59"]
+atlas = ExtResource("1_planeta")
+region = Rect2(1152, 640, 128, 128)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Cuadro_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_6")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_7")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_8")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_9")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_10")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_11")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_12")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_13")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_14")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_15")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_16")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_17")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_18")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_19")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_20")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_21")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_22")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_23")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_24")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_25")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_26")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_27")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_28")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_29")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_30")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_31")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_32")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_33")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_34")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_35")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_36")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_37")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_38")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_39")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_40")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_41")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_42")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_43")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_44")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_45")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_46")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_47")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_48")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_49")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_50")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_51")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_52")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_53")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_54")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_55")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_56")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_57")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_58")
+}, {
+"duration": 1.0,
+"texture": SubResource("Cuadro_59")
+}],
+"loop": 1,
+"name": &"rotacion",
+"speed": 5.0
+}]

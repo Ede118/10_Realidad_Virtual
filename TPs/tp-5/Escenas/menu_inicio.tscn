@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://c4yakhrnwmi51"]
+
+[ext_resource type="FontFile" uid="uid://bm6bs1p7umask" path="res://Font/woff/CozySpacePixel-Bold.woff" id="1_28gfr"]
+[ext_resource type="Texture2D" uid="uid://b55usehleptk8" path="res://Background/moon/1 background/orig_big.png" id="1_tsrxo"]
+[ext_resource type="Script" uid="uid://qp5bvwl64ls" path="res://Escenas/menu_inicio.gd" id="3_menu"]
+
+[sub_resource type="Theme" id="Theme_7gbsc"]
+default_font = ExtResource("1_28gfr")
+default_font_size = 20
+
+[node name="MenuInicio" type="Control" unique_id=1147749048]
+propagate_maximum_size = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_7gbsc")
+script = ExtResource("3_menu")
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=57983485]
+custom_minimum_size = Vector2(1152, 648)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -864.0
+offset_top = -324.0
+offset_right = 864.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_tsrxo")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1304907837]
+layout_mode = 0
+offset_right = 250.0
+offset_bottom = 250.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1066219954]
+custom_minimum_size = Vector2(1152, 648)
+layout_mode = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1538869136]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 10
+theme_override_font_sizes/font_size = 86
+text = "Lunar Landing"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/VBoxContainer" unique_id=1993586771]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="start_game" type="Button" parent="CenterContainer/VBoxContainer/VBoxContainer" unique_id=415940497]
+layout_mode = 2
+text = "Start New Game"
+icon_alignment = 1
+
+[node name="exit_game" type="Button" parent="CenterContainer/VBoxContainer/VBoxContainer" unique_id=696525858]
+layout_mode = 2
+text = "Exit"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/VBoxContainer/start_game" to="." method="_on_boton_jugar_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/VBoxContainer/exit_game" to="." method="_on_boton_salir_pressed"]

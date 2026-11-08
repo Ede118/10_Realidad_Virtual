@@ -1,0 +1,32 @@
+{
+ "product": "Animated Pixel Planets",
+ "version": "1.1",
+ "frame_sizes": [
+  [
+   64,
+   64
+  ],
+  [
+   128,
+   128
+  ]
+ ],
+ "frames": 60,
+ "fps": 20,
+ "ms_per_frame": 50,
+ "loop": true,
+ "loop_note": "frame 59 leads into frame 0",
+ "sheet": {
+  "columns": 10,
+  "rows": 6,
+  "order": "row-major, frame 0 top left"
+ },
+ "anchor": "centre of the frame (body centre)",
+ "light": "upper left, in front (x -0.55, y -0.42, z 0.72)",
+ "godot_animation": "spin",
+ "palette_files": [
+  "Source/palette.gpl",
+  "Source/palette.hex"
+ ],
+ "max_colours_per_body": 16
+}

@@ -1,0 +1,47 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://GameGUI/HealthBarLarger.png" id="1_panel"]
+[ext_resource type="Script" path="res://Escenas/hud.gd" id="3_script"]
+
+[sub_resource type="StyleBoxFlat" id="Style_fondo"]
+bg_color = Color(0.015, 0.02, 0.03, 1)
+
+[sub_resource type="StyleBoxFlat" id="Style_combustible"]
+bg_color = Color(1, 0.6, 0.15, 1)
+
+[node name="GUI" type="CanvasLayer"]
+layer = 1
+script = ExtResource("3_script")
+
+[node name="Interfaz" type="Control" parent="."]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Panel" type="TextureRect" parent="Interfaz"]
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 76.0
+offset_bottom = 268.0
+scale = Vector2(0.75, 0.75)
+mouse_filter = 2
+texture = ExtResource("1_panel")
+expand_mode = 1
+
+[node name="Combustible" type="ProgressBar" parent="Interfaz/Panel"]
+offset_left = 8.0
+offset_top = 64.0
+offset_right = 56.0
+offset_bottom = 244.0
+mouse_filter = 2
+theme_override_styles/background = SubResource("Style_fondo")
+theme_override_styles/fill = SubResource("Style_combustible")
+max_value = 300.0
+value = 300.0
+fill_mode = 3
+show_percentage = false
